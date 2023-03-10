@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>
-      <img src="../assets/logo.png" alt="" />
+      <img src="../assets/logo.jpeg" alt="" />
     </h1>
     <button class="button" @click="alterarTema">{{ textoBotao }}</button>
   </header>
