@@ -15,7 +15,7 @@
           :tarefa="tarefa"
         />
         <BoxPadrao v-if="listaEstaVazia">
-          Você não está muito produtivo hoje!
+          Você não está muito produtiva hoje!
         </BoxPadrao>
       </div>
     </div>
