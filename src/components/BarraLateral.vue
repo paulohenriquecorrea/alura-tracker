@@ -54,12 +54,17 @@ export default defineComponent({
 </script>
 
 <style scoped>
+h1 {
+  text-align: center;
+}
+strong {
+  color: #f95738;
+}
 header {
-  padding: 1rem;
+  padding: 2rem;
   background: #0d3b66;
   width: 100%;
   height: 100vh;
-  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
