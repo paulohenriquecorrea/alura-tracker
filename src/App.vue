@@ -7,17 +7,7 @@
       <BarraLateral @aoTemaAlterado="trocarTema" />
     </div>
     <div class="column is-three-quarter conteudo">
-      <FormularioCadastro @aoSalvarTarefa="salvarTarefa" />
-      <div class="lista">
-        <TarefaRealizada
-          v-for="(tarefa, index) in tarefas"
-          :key="index"
-          :tarefa="tarefa"
-        />
-        <BoxPadrao v-if="listaEstaVazia">
-          Você não está muito produtivo(a) hoje!
-        </BoxPadrao>
-      </div>
+      <router-view></router-view>
     </div>
   </main>
 </template>
@@ -34,9 +24,6 @@ export default defineComponent({
   name: "App",
   components: {
     BarraLateral,
-    FormularioCadastro,
-    TarefaRealizada,
-    BoxPadrao,
   },
 
   data() {
