@@ -7,6 +7,7 @@
       <BarraLateral @aoTemaAlterado="trocarTema" />
     </div>
     <div class="column is-three-quarter conteudo">
+      <Notificacoes />
       <router-view></router-view>
     </div>
   </main>
@@ -19,11 +20,13 @@ import FormularioCadastro from "./components/FormularioCadastro.vue";
 import TarefaRealizada from "./components/Tarefa.vue";
 import ITarefa from "./interfaces/ITarefa.vue";
 import BoxPadrao from "./components/Box.vue";
+import Notificacoes from "./components/Notificacoes.vue";
 
 export default defineComponent({
   name: "App",
   components: {
     BarraLateral,
+    Notificacoes,
   },
 
   data() {
