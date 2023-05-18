@@ -9,8 +9,42 @@
       "nome": "TESTE ALTERADOOOOOOOOOOOOO"
     },
     {
-      "nome": "teste 2 ",
+      "id": 3,
+      "nome": "teste 2 0"
+    }
+  ],
+  "tarefas": [
+    {
+      "id": 1,
+      "duracaoEmSegundos": 120,
+      "descricao": "Estudar VueJS",
+      "projeto": {
+        "id": 1,
+        "nome": "Alura Tracker 3.0"
+      }
+    },
+    {
+      "duracaoEmSegundos": 4,
+      "descricao": "TESTE",
+      "id": 2
+    },
+    {
+      "duracaoEmSegundos": 0,
+      "descricao": "REFACT",
+      "projeto": {
+        "id": 1,
+        "nome": "Alura Tracker 3.0"
+      },
       "id": 3
+    },
+    {
+      "duracaoEmSegundos": 0,
+      "descricao": "REFACT3",
+      "projeto": {
+        "id": 1,
+        "nome": "Alura Tracker 3.0"
+      },
+      "id": 4
     }
   ]
 }

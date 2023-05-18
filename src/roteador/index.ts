@@ -10,6 +10,7 @@ const rotas: RouteRecordRaw[] = [
     name: 'Tarefas',
     component: Tarefas,
   },
+
   {
     path: '/projetos',
     component: Projetos,

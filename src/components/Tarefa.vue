@@ -1,6 +1,6 @@
 <template>
   <BoxPadrao>
-    <div class="columns">
+    <div class="columns clicavel" @click="tarefaClicada">
       <div class="column is-4">
         {{ tarefa.descricao || "Tarefa sem descrição" }}
       </div>
@@ -22,9 +22,15 @@ import BoxPadrao from "./Box.vue";
 
 export default defineComponent({
   name: "TarefaRealizada",
+  emits: ["aoTarefaClicada"],
   components: {
     CronometroDefault,
     BoxPadrao,
+  },
+  methods: {
+    tarefaClicada(): void {
+      this.$emit("aoTarefaClicada", this.tarefa); // O primeiro argumento é o nome do evento que será emitido, o segundo é o que será enviado como parâmetro
+    },
   },
   props: {
     tarefa: {
@@ -34,4 +40,10 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+.clicavel {
+  cursor: pointer;
+}
+</style>
 
