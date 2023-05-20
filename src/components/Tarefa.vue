@@ -27,16 +27,20 @@ export default defineComponent({
     CronometroDefault,
     BoxPadrao,
   },
-  methods: {
-    tarefaClicada(): void {
-      this.$emit("aoTarefaClicada", this.tarefa); // O primeiro argumento é o nome do evento que será emitido, o segundo é o que será enviado como parâmetro
-    },
-  },
   props: {
     tarefa: {
       type: Object as PropType<typeof ITarefa>,
       required: true,
     },
+  },
+
+  setup(props, { emit }) {
+    const tarefaClicada = (): void => {
+      emit("aoTarefaClicada", props.tarefa); // O primeiro argumento é o nome do evento que será emitido, o segundo é o que será enviado como parâmetro
+    };
+    return {
+      tarefaClicada,
+    };
   },
 });
 </script>

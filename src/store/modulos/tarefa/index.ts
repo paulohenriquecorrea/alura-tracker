@@ -48,7 +48,7 @@ export const tarefa: Module<EstadoTarefa, Estado> = {
     [ALTERAR_TAREFA]({ commit }, tarefa: ITarefa) {
       return http
         .put(`/tarefas/${tarefa.id}`, tarefa)
-        .then(() => commit(ALTERAR_TAREFA, tarefa));
+        .then(() => commit(ALTERA_TAREFA, tarefa));
     },
   },
 };
