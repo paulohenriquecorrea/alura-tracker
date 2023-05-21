@@ -13,7 +13,7 @@
     {
       "id": 1,
       "duracaoEmSegundos": 120,
-      "descricao": "Estudar VueJS",
+      "descricao": "Estudar NodeJs e VueJS",
       "projeto": {
         "id": 1,
         "nome": "Alura Tracker 3.0"
@@ -98,7 +98,7 @@
     },
     {
       "duracaoEmSegundos": 1,
-      "descricao": "testesssserrg",
+      "descricao": "t",
       "projeto": {
         "id": 3,
         "nome": "teste 2 0"
